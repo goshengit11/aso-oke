@@ -21,6 +21,20 @@ const authConfig = (token: string) => ({
   },
 });
 
+export const initializeAsoOkeCheckout = async (data: CheckoutPayload) => {
+  try {
+    const res = await api.post(
+      "/products/fashion-aso-oke/checkout",
+      data,
+      authConfig(token),
+    );
+
+    return res.data;
+  } catch (err: any) {
+    throw err.response?.data || err;
+  }
+};
+
 export const getProductsTok = async () => {
   try {
     const res = await api.get(
@@ -118,23 +132,6 @@ export interface CheckoutPayload {
   callback_url: string;
   metadata?: Record<string, any>;
 }
-
-export const initializeAsoOkeCheckout = async (
-  token: string,
-  data: CheckoutPayload,
-) => {
-  try {
-    const res = await api.post(
-      "/products/fashion-aso-oke/checkout",
-      data,
-      authConfig(token),
-    );
-
-    return res.data;
-  } catch (err: any) {
-    throw err.response?.data || err;
-  }
-};
 
 export interface UpdateAsoOkeProductPayload {
   name?: string;

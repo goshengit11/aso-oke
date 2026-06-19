@@ -91,7 +91,7 @@ export default function CheckoutPage() {
         },
       };
 
-      const res = await initializeAsoOkeCheckout(token, payload);
+      const res = await initializeAsoOkeCheckout(payload);
 
       // API wrapper returns backend res.data — follow the provided sample
       const authUrl =
