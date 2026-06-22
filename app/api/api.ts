@@ -11,8 +11,7 @@ const api = axios.create({
 });
 
 const token: string =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTQ4YzgxNC0xMDQwLTQ4ZTAtYjhmNi02NDYwYmEwYjRiN2IiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNzgxNzg4MzEyLCJleHAiOjE3ODE4OTYzMTJ9.x10rjMT9dmkOBXmWBaUYyOdOjqStYnd0S4R6RkMsI1I";
-
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTQ4YzgxNC0xMDQwLTQ4ZTAtYjhmNi02NDYwYmEwYjRiN2IiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNzgyMTMxNTA4LCJleHAiOjE3ODI1NjM1MDh9.7uxbrkFkIBb-W6abt10F2ZII2aFMlSd5zZF3pjCrfck";
 // Helper for auth headers
 const authConfig = (token: string) => ({
   headers: {
