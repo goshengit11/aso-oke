@@ -102,7 +102,7 @@ export default function ShopPage() {
           <div className="grid md:grid-cols-4 gap-10">
             {/* ================= FILTER ================= */}
             <aside className="md:col-span-1 space-y-8">
-              <h2 className="text-sm font-semibold text-gray-700">FILTER BY</h2>
+              {/* <h2 className="text-sm font-semibold text-gray-700">FILTER BY</h2> */}
 
               <div>
                 <p className="text-sm font-medium mb-3">Category</p>
@@ -116,7 +116,7 @@ export default function ShopPage() {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <p className="text-sm font-medium mb-3">Price</p>
                 <div className="flex space-x-2">
                   <input
@@ -134,7 +134,7 @@ export default function ShopPage() {
 
               <button className="border px-4 py-2 text-sm hover:bg-gray-100">
                 Clear Filters
-              </button>
+              </button> */}
             </aside>
 
             {/* ================= PRODUCTS ================= */}

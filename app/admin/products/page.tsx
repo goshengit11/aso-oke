@@ -350,14 +350,14 @@ export default function AdminProductsPage() {
             <div className="px-5 py-3 border-t border-gray-700 flex justify-end gap-2">
               <button
                 onClick={() => setShowModal(false)}
-                className="px-4 py-2 text-sm border border-gray-600 rounded-lg"
+                className="px-4 py-2 text-sm cursor-pointer border border-gray-600 rounded-lg"
               >
                 Cancel
               </button>
 
               <button
                 onClick={saveProduct}
-                className="px-4 py-2 text-sm bg-orange-600 text-white rounded-lg"
+                className="px-4 py-2 text-sm cursor-pointer bg-orange-600 text-white rounded-lg"
               >
                 {editProduct ? "Save" : "Create"}
               </button>

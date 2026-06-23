@@ -186,7 +186,7 @@ export default function CategorySection() {
               <p className="text-xs opacity-80 mb-2">{item.desc}</p>
              
              <Link href={"/shop"}>
-              <button className="text-xs border border-white px-3 py-1 rounded-full w-fit animate-bounce hover:bg-white hover:text-black transition">
+              <button className="text-xs border cursor-pointer border-white px-3 py-1 rounded-full w-fit animate-bounce hover:bg-white hover:text-black transition">
                 {item.btn}
               </button>
               </Link>
