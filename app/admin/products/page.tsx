@@ -222,15 +222,15 @@ export default function AdminProductsPage() {
               key={p.id}
               className="bg-white border border-gray-100 rounded-xl overflow-hidden"
             >
-              <div className="h-[72px] bg-[#f5efe6] flex items-center justify-center text-4xl border-b">
+              <div className="h-[200px] bg-[#f5efe6] flex items-center justify-center border-b">
                 {p.product_url ? (
                   <img
                     src={p.product_url}
                     alt={p.name}
-                    className="h-full w-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                 ) : (
-                  p.emoji || ""
+                  <span className="text-6xl">{p.emoji || ""}</span>
                 )}
               </div>
 
