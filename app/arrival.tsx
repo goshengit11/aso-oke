@@ -226,16 +226,23 @@ export default function NewArrivals() {
 
   return (
     <div>
+       <div className="text-center mb-10">
+        <h2 className="text-xxl md:text-2xl mt-10 text-gray-800">
+          New Arrivals
+        </h2>
+        <div className="w-16 h-0.5 bg-[#d4af37] mx-auto mt-3"></div>
+      </div>
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6">
+       
         {products.map((product) => (
           <div
             key={product.id}
-            className="border border-[#d4af37] p-4 relative"
+            className="border  border-[#d4af37] p-4 relative"
           >
             <img
               src={product.image}
-              className="h-[300px] w-full object-cover hover:scale-105 transition duration-500"
+              className="h-55 w-full object-cover hover:scale-105 transition duration-500"
             />
 
             <div className="flex justify-between items-center">
@@ -265,7 +272,7 @@ export default function NewArrivals() {
           </button>
         </Link>
       </div>
-      <div className="h-20"></div>
+      <div className="h-10"></div>
     </div>
   );
 }

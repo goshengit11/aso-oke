@@ -27,13 +27,13 @@ export default function ContactPage() {
 
             <div>
               <p className="font-semibold">PHONE</p>
-              <p>+234 801 234 5678</p>
+              <p>+234 812 757 8710 </p>
             </div>
 
             <div>
               <p className="font-semibold">LOCATION</p>
-              <p>New-waso market, along ogbomoso-ilorin express  <br />
-                road, ogbomoso, oyo state, Nigeria.</p>
+              <p> <br />
+                 ogbomoso, oyo state, Nigeria.</p>
             </div>
 
           </div>

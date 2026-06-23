@@ -169,7 +169,7 @@ export default function CategorySection() {
         {categories.map((item, index) => (
           <div
             key={index}
-            className="relative h-[220px] rounded-2xl overflow-hidden group cursor-pointer"
+            className="relative h-55 rounded-2xl overflow-hidden group cursor-pointer"
           >
             {/* Background Image */}
             <div

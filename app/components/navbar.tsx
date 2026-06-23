@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <img
-              src="/logobac.jpeg"
+              src="/loogo.png"
               alt="logo"
               className="h-10 w-10 rounded-full object-cover"
             />
