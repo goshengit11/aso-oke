@@ -55,7 +55,6 @@
 
 //     router.push("/cart");
 //   };
-  
 
 //   return (
 //     <section className="w-full bg-white py-20">
@@ -122,9 +121,6 @@
 //   );
 // }
 
-
-
-
 // import { useCartStore } from "@/store/CartStore";
 // import { useRouter } from "next/navigation";
 // import Link from "next/link";
@@ -168,7 +164,7 @@
 //               </h2>
 //            <div className="w-16 h-[2px] bg-[#d4af37] mx-auto mt-3"></div>
 //          </div>
-   
+
 //     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 ">
 //             {products.map((product) => (
 //         <div key={product.id} className="border border-[#d4af37] p-4">
@@ -178,7 +174,7 @@
 //           <h3 className="text-black py-3">{product.name}</h3>
 //           <p className="text-black">₦{product.price.toLocaleString()}</p>
 //            </div>
-           
+
 //           <button
 //             onClick={() => addToCart(product)}
 //             className="bg-black text-white rounded-3xl h-8 text-sm ml-10 px-3 py-1 mt-6 hover:scale-105 transition duration-500 animate-bounce"
@@ -190,11 +186,11 @@
 //                   NEW
 //                 </span>
 //         </div>
-       
+
 //       ))}
 //       </div>
 //       <div className="flex place-content-center">
-//          <Link href={"/All-arrival"}> 
+//          <Link href={"/All-arrival"}>
 //         <button className="h-10 w-40 border border-gray-500 text-black text-lg mt-10 cursor-pointer hover:scale-105 transition duration-500">
 //           All New Arrivals
 //         </button>
@@ -205,9 +201,6 @@
 //   );
 // }
 
-
-
-
 "use client";
 import { useState } from "react";
 import { useCartStore } from "@/store/CartStore";
@@ -215,12 +208,17 @@ import Link from "next/link";
 
 export default function NewArrivals() {
   const addToCart = useCartStore((state) => state.addToCart);
-  
-    const [selectedProduct, setSelectedProduct] = useState<any>(null);
-    const [qty, setQty] = useState(1);
+
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [qty, setQty] = useState(1);
 
   const products = [
-    { id: 1, name: "Modern Stripe Weave", price: 45000, image: "/chocolate.jpg" },
+    {
+      id: 1,
+      name: "Modern Stripe Weave",
+      price: 45000,
+      image: "/chocolate.jpg",
+    },
     { id: 2, name: "Luxury Burgundy Set", price: 18000, image: "/plain.png" },
     { id: 3, name: "Royal Blue Aso Oke", price: 18000, image: "/stripe.png" },
     { id: 4, name: "Classic Gold Pattern", price: 18000, image: "/gold.jpg" },
@@ -228,12 +226,13 @@ export default function NewArrivals() {
 
   return (
     <div>
-      
       {/* GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6">
         {products.map((product) => (
-          <div key={product.id} className="border border-[#d4af37] p-4 relative">
-            
+          <div
+            key={product.id}
+            className="border border-[#d4af37] p-4 relative"
+          >
             <img
               src={product.image}
               className="h-[300px] w-full object-cover hover:scale-105 transition duration-500"
@@ -242,13 +241,11 @@ export default function NewArrivals() {
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="text-black py-3">{product.name}</h3>
-                <p className="text-black">
-                  ₦{product.price.toLocaleString()}
-                </p>
+                <p className="text-black">₦{product.price.toLocaleString()}</p>
               </div>
 
               <button
-                 onClick={() => addToCart(product, 1)}
+                onClick={() => addToCart(product, 1)}
                 className="bg-black text-white rounded-3xl h-8 text-sm px-3 animate-bounce hover:scale-105 transition"
               >
                 Add to Cart
@@ -262,13 +259,13 @@ export default function NewArrivals() {
         ))}
       </div>
       <div className="flex place-content-center">
-          <Link href={"/All-arrival"}> 
-       <button className="h-10 w-40 border border-gray-500 text-black text-lg mt-10 cursor-pointer hover:scale-105 transition duration-500">
-         All New Arrivals
-         </button>
+        <Link href={"/All-arrival"}>
+          <button className="h-10 w-40 border border-gray-500 text-black text-lg mt-10 cursor-pointer hover:scale-105 transition duration-500">
+            All New Arrivals
+          </button>
         </Link>
       </div>
-           <div className="h-20"></div>
+      <div className="h-20"></div>
     </div>
   );
 }
