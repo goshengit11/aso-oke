@@ -236,7 +236,7 @@ export default function NewArrivals() {
     <div>
       <Navbar/>
       {/* GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 py-35">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 py-35">
         {products.map((product) => (
           <div key={product.id} className="border border-[#d4af37] p-4 relative">
             
