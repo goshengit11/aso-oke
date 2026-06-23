@@ -57,7 +57,7 @@ export default function Navbar() {
 
           {/* Mobile Actions */}
           <div className="md:hidden flex items-center gap-4">
-            <Link href="/cart" className="relative">
+            <Link href="/cart" className="relative bg-black">
               <ShoppingCart className="w-6 h-6" />
 
               {totalItems > 0 && (
@@ -93,7 +93,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between p-5 border-b">
-            <h2 className="font-semibold text-lg">Menu</h2>
+            <h2 className="font-semibold text-lg text-black">Menu</h2>
 
             <button onClick={() => setIsOpen(false)}>
               <X size={28} />
@@ -103,7 +103,7 @@ export default function Navbar() {
           <div className="flex flex-col py-4">
             <Link
               href="/"
-              className="px-6 py-4 text-lg border-b"
+              className="px-6 py-4 text-lg text-black border-b"
               onClick={() => setIsOpen(false)}
             >
               Home
@@ -111,7 +111,7 @@ export default function Navbar() {
 
             <Link
               href="/shop"
-              className="px-6 py-4 text-lg border-b"
+              className="px-6 py-4 text-lg text-black border-b"
               onClick={() => setIsOpen(false)}
             >
               Shop
@@ -119,7 +119,7 @@ export default function Navbar() {
 
             <Link
               href="/about-us"
-              className="px-6 py-4 text-lg border-b"
+              className="px-6 py-4 text-lg text-black border-b"
               onClick={() => setIsOpen(false)}
             >
               About
@@ -127,13 +127,13 @@ export default function Navbar() {
 
             <Link
               href="/contact-us"
-              className="px-6 py-4 text-lg border-b"
+              className="px-6 py-4 text-lg text-black border-b"
               onClick={() => setIsOpen(false)}
             >
               Contact
             </Link>
 
-            <button className="px-6 py-4 flex items-center gap-3 text-lg">
+            <button className="px-6 py-4 flex text-black items-center gap-3 text-lg">
               <Search size={20} />
               Search
             </button>
