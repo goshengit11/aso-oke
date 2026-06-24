@@ -17,7 +17,7 @@ export default function OurHeritageSection() {
             reflects generations of artistry passed down with care.
           </p>
 
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed animate">
             We preserve the essence of handwoven excellence while reimagining it for
             modern elegance. Each piece is created to honor culture and elevate
             your most meaningful moments.
@@ -35,10 +35,10 @@ export default function OurHeritageSection() {
         </div>
 
         {/* IMAGE SIDE */}
-        <div className="relative w-full h-[320px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative w-full h-80 md:h-112.5 rounded-2xl overflow-hidden shadow-lg">
 
           <img
-            src="/couple.png"
+            src="/weaving.jpeg"
             alt="Traditional aso-oke weaving heritage"
             className="w-full h-full object-cover hover:scale-105 transition duration-500"
           />

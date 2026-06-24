@@ -21,7 +21,7 @@ export default function Navbar() {
             <img
               src="/loogo.png"
               alt="logo"
-              className="h-10 w-10 rounded-full object-cover"
+              className="h-20 w-15 rounded-full object-cover"
             />
           </Link>
 
@@ -48,7 +48,7 @@ export default function Navbar() {
             <Link href="/cart" className="relative">
               <ShoppingCart />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full min-w-[20px] h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full min-w-5 h-5 flex items-center justify-center">
                   {totalItems}
                 </span>
               )}
@@ -61,7 +61,7 @@ export default function Navbar() {
               <ShoppingCart className="w-6 h-6" />
 
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full min-w-[20px] h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full min-w-5 h-5 flex items-center justify-center">
                   {totalItems}
                 </span>
               )}
@@ -76,7 +76,7 @@ export default function Navbar() {
 
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-[100] md:hidden transition-all duration-300 ${
+        className={`fixed inset-0 z-100 md:hidden transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
