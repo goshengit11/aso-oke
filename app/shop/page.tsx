@@ -372,7 +372,7 @@ export default function ShopPage() {
       price: 20000,
       product_url: "/brown.jpg",
       description: "Premium handwoven aso-oke in rich burgundy with blue, black, and white stripe accents, designed for a bold and sophisticated traditional look.",
-      stock_quantity: 0,
+      stock_quantity: 2,
       is_active: true,
     },
     {
@@ -381,7 +381,7 @@ export default function ShopPage() {
       price: 20000,
       product_url: "/green.png",
       description: "A combination of patterned rich olive green base accented with vibrant orange and crisp white stripes,",
-      stock_quantity: 0,
+      stock_quantity: 2,
       is_active: true,
     },
     {
@@ -390,7 +390,7 @@ export default function ShopPage() {
       price: 20000,
       product_url: "/blue.png",
       description: "Premium handwoven aso-oke in deep navy and sky blue tones with subtle burgundy stripe accents, crafted for a sleek and modern traditional look.",
-      stock_quantity: 0,
+      stock_quantity: 2,
       is_active: true,
     },  
   ];
