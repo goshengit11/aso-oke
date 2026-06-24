@@ -19,6 +19,9 @@ type CartStore = {
   removeFromCart: (id: number | string) => void;
   increaseQty: (id: number | string) => void;
   decreaseQty: (id: number | string) => void;
+
+  // ✅ ADD THIS
+  clearCart: () => void;
 };
 
 export const useCartStore = create<CartStore>()(
@@ -65,6 +68,9 @@ export const useCartStore = create<CartStore>()(
             )
             .filter((item) => item.quantity > 0),
         })),
+
+      // ✅ IMPLEMENTATION
+      clearCart: () => set({ cart: [] }),
     }),
     {
       name: "aso_oke_cart",

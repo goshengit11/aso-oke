@@ -81,7 +81,7 @@ export default function CheckoutPage() {
       const payload: CheckoutPayload = {
         email: form.email,
         amount: total,
-        callback_url: window.location.origin,
+   callback_url: `${window.location.origin}/success`,
         metadata: {
           name: form.name,
           phone: form.phone,
