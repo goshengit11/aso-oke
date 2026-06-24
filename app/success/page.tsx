@@ -1,11 +1,12 @@
 "use client";
 
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import { useCartStore } from "@/store/CartStore";
 import Navbar from "../components/navbar";
 
-export default function SuccessPage() {
+/* ================= INNER COMPONENT ================= */
+function SuccessContent() {
   const params = useSearchParams();
 
   const reference =
@@ -14,13 +15,12 @@ export default function SuccessPage() {
   const clearCart = useCartStore((state) => state.clearCart);
 
   useEffect(() => {
-    // Clear cart once page loads
-    clearCart();
-  }, [clearCart]);
+    if (reference) {
+      clearCart();
+    }
+  }, [reference, clearCart]);
 
   return (
-    <div>
-        <Navbar/>
     <div className="h-screen flex flex-col items-center justify-center text-center px-4">
       
       <h1 className="text-3xl font-semibold mb-4 text-green-600">
@@ -47,8 +47,19 @@ export default function SuccessPage() {
       >
         Continue Shopping
       </a>
-
     </div>
+  );
+}
+
+/* ================= PAGE ================= */
+export default function SuccessPage() {
+  return (
+    <div>
+      <Navbar />
+
+      <Suspense fallback={<p className="text-center mt-20">Loading...</p>}>
+        <SuccessContent />
+      </Suspense>
     </div>
   );
 }
