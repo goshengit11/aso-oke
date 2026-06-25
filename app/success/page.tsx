@@ -15,7 +15,7 @@ function SuccessContent() {
   const clearCart = useCartStore((state) => state.clearCart);
 
   useEffect(() => {
-    if (reference) {m
+    if (reference) {
       clearCart();
     }
   }, [reference, clearCart]);
