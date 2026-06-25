@@ -238,7 +238,7 @@ export default function NewArrivals() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border  border-[#d4af37] p-4 relative"
+            className="border border-[#d4af37] p-4 relative"
           >
             <img
               src={product.image}

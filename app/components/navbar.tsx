@@ -18,11 +18,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto h-16 px-4 flex items-center justify-between text-white">
           {/* Logo */}
           <Link href="/">
-            <img
+          <h1 className="text-[#b8963f] text-2xl font-semibold">ASỌ-ÒKÈ</h1>
+            {/* <img
               src="/loogo.png"
               alt="logo"
               className="h-20 w-15 rounded-full object-cover"
-            />
+            /> */}
           </Link>
 
           {/* Desktop Menu */}
@@ -43,7 +44,7 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-5">
-            <Search className="w-5 h-5 cursor-pointer" />
+            {/* <Search className="w-5 h-5 cursor-pointer" /> */}
 
             <Link href="/cart" className="relative">
               <ShoppingCart />

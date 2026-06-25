@@ -47,12 +47,15 @@ export default function Footer() {
             </Link>
             {/* <li className="hover:text-white transition">Shipping Info</li>
             <li className="hover:text-white transition">Returns</li> */}
+
+            <Link href={"/terms"}>
             <li className="hover:text-white transition">Terms & Conditions</li>
+            </Link>
           </ul>
         </div>
 
         {/* NEWSLETTER */}
-        <div>
+        {/* <div>
           <h2 className="text-sm font-semibold text-[#d4af37] mb-4 hover:text-white">
             NEWSLETTER
           </h2>
@@ -70,8 +73,8 @@ export default function Footer() {
             <button className="bg-[#d4af37] text-black px-4 text-sm font-semibold hover:text-white">
               SUBSCRIBE
             </button>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
       </div>
 
