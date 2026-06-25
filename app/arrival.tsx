@@ -216,7 +216,7 @@ export default function NewArrivals() {
     {
       id: 1,
       name: "Modern Stripe Weave",
-      price: 45000,
+      price: 18000,
       image: "/chocolate.jpg",
     },
     { id: 2, name: "Luxury Burgundy Set", price: 18000, image: "/plain.png" },
